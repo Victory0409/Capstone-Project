@@ -1,12 +1,12 @@
 # 🚚 Logistics Performance Analytics Capstone Project
-# 📌 Project Overview
+## 📌 Project Overview
 This capstone project analyzes the operational and financial performance of a logistics company. The objective was to transform raw logistics data into actionable insights that support decision-making across operations, finance, customer management, and safety compliance.
 
 The project combines data from loads, trips, routes, customers, and safety records to evaluate overall business performance, identify operational bottlenecks, monitor profitability, and improve service delivery.
 
 Using SQL, Excel, Python, and Power BI, the project follows a complete analytics workflow from data cleaning and transformation to dashboard development and business intelligence reporting.
 
-# 🎯 Business Objectives
+## 🎯 Business Objectives
 
 -Monitor revenue, costs, and profitability.
 
@@ -20,7 +20,7 @@ Using SQL, Excel, Python, and Power BI, the project follows a complete analytics
 
 -Identify trends and opportunities for operational improvement.
 
-# 🛠 Tools & Technologies
+## 🛠 Tools & Technologies
 
 Microsoft Excel – Initial data review and validation.
 
@@ -34,7 +34,7 @@ Power BI – Interactive dashboard development and data visualization.
 
 The project consists of multiple interconnected datasets:
 
-# Load Data
+## Load Data
 
 Contains shipment information including:
 
@@ -44,7 +44,7 @@ Contains shipment information including:
 - Weight
 - Delivery Status
 
-# Trip Data
+## Trip Data
 
 Contains transportation details including:
 
@@ -54,7 +54,7 @@ Contains transportation details including:
 - Fuel Consumption
 - Trip Status
 
-# Customer Data
+## Customer Data
 
 Contains customer-related information including:
 
@@ -63,7 +63,7 @@ Contains customer-related information including:
 - Industry Segment
 - Revenue Contribution
 
-# Route Data
+## Route Data
 
 Contains route performance information including:
 
@@ -73,7 +73,63 @@ Contains route performance information including:
 - Distance
 - Route Performance Metrics
 
-# Safety Incident Data
+## Driver Data
+
+Contains driver profile and operational information including:
+
+- Driver ID
+- Driver Name
+- License Information
+- Hire Date
+- Employment Status
+- Assigned Vehicle
+
+## Monthly Driver Metrics Data
+
+Contains monthly driver performance records including:
+
+- Driver ID
+- month
+- Total Trips Completed
+- Total Distance Driven
+- Revenue Generated
+- On-Time Delivery Rate
+- Driver Performance Score
+
+## Truck Data
+
+Contains fleet and vehicle information including:
+
+- Vehicle ID
+- Truck Type
+- Vehicle Status
+- Capacity
+- Model Year
+- Assigned Region
+
+## Maintenance Data
+
+Contains vehicle servicing and maintenance records including:
+
+- Maintenance ID
+- Vehicle ID
+- Service Type
+- Maintenance Cost
+- Service Date
+- Downtime Duration
+
+## Fuel Usage Data
+
+Contains fuel consumption and fuel cost records including:
+
+- Fuel Record ID
+- Vehicle ID
+- Fuel Quantity
+- Fuel Cost
+- Fuel Type
+- Fuel Date
+
+## Safety Incident Data
 
 Contains operational safety records including:
 
@@ -86,11 +142,11 @@ Contains operational safety records including:
 
 # 🔄 Data Preparation Process
 
-# 1. Data Collection
+## 1. Data Collection
 
 Collected logistics operational data from multiple business areas including loads, trips, customers, routes, and safety incidents.
 
-# 2. Data Cleaning
+## 2. Data Cleaning
 
 Performed extensive cleaning activities such as:
 
@@ -100,7 +156,7 @@ Performed extensive cleaning activities such as:
 - Validating business rules
 - Correcting inconsistent entries
 
-# 3. Data Transformation
+## 3. Data Transformation
 
 Created calculated fields and business metrics including:
 
@@ -110,90 +166,95 @@ Created calculated fields and business metrics including:
 - Delivery Success Rate
 - Incident Frequency Rate
 
-# 4. Data Modeling
+## 4. Data Modeling
 
 Established relationships between fact and dimension tables to create a structured analytical model suitable for reporting and visualization.
 
 # 📊 Dashboard 1: Executive Overview Dashboard
-# Purpose
+## Purpose
 
 Provides a high-level view of the company's overall performance.
 
-- Key Metrics
+## Key Metrics
 - Total Revenue
 - Total Profit
 - Total Loads
 - Total Trips
+- Total Customer
 - Average Revenue per Load
 - Profit Margin
-# Insights Generated
+## Insights Generated
 - Business growth trends
 - Profitability analysis
 - Operational performance summary
 - Executive-level KPIs
 
-# 🚛 Dashboard 2: Operations Performance Dashboard
-# Purpose
+# 👨‍✈️ Dashboard 2: Driver Performance Analytics Dashboard
+## Purpose
 
-Monitors transportation and delivery operations.
+Evaluates driver productivity, efficiency, and safety performance across the organization.
 
-- Key Metrics
-- Total Trips Completed
-- Delivery Success Rate
-- Average Distance Traveled
+## Key Metrics
+- Total Trips by Driver
+- Revenue Generated per Driver
+- On-Time Delivery Rate
+- Average Distance Covered
+- Safety Incidents by Driver
+- Driver Performance Score
+## Insights Generated
+- Top-performing drivers
+- Drivers requiring additional support or training
+- Driver productivity trends
+- Safety and compliance monitoring
+
+# 🚚 Dashboard 3: Transportation & Maintenance Analytics Dashboard
+## Purpose
+
+Monitors transportation operations and vehicle maintenance activities to improve fleet reliability and efficiency.
+
+## Key Metrics
 - Fuel Consumption
-- Route Utilization
-# Insights Generated
-- Operational efficiency
-- Delivery performance trends
-- Fleet productivity analysis
-- Route optimization opportunities
+- Maintenance Costs
+- Vehicle Downtime
+- Distance Traveled
+- Service Frequency
+- Operational Efficiency Metrics
+## Insights Generated
+- Fleet operating costs
+- Maintenance performance trends
+- Vehicle utilization analysis
+- Opportunities to reduce downtime and expenses
 
-# 👥 Dashboard 3: Customer Analytics Dashboard
-# Purpose
+# 🚛 Dashboard 4: Fleet Distribution Dashboard
+## Purpose
 
-Analyzes customer behavior and revenue contribution.
+Provides visibility into fleet allocation, utilization, and distribution across regions and operational areas.
 
-- Key Metrics
-- Customer Revenue Contribution
-- Active Customers
-- Top Customers
-- Customer Segmentation
-- Revenue Distribution
-# Insights Generated
-- High-value customer identification
-- Customer retention opportunities
-- Revenue concentration analysis
-
-# 🛣 Dashboard 4: Route Performance Dashboard
-Purpose
-
-Evaluates route effectiveness and transportation efficiency.
-
-- Key Metrics
-- Revenue by Route
-- Distance by Route
-- Route Profitability
-- Route Utilization Rate
-- Average Delivery Time
-# Insights Generated
-- Most profitable routes
-- Underperforming routes
-- Transportation optimization opportunities
+## Key Metrics
+- Fleet Count by Region
+- Vehicle Distribution
+- Fleet Utilization Rate
+- Active vs Inactive Vehicles
+- Regional Fleet Performance
+## Insights Generated
+- Fleet allocation effectiveness
+- Regional resource distribution
+- Underutilized vehicles
+- Capacity planning opportunities
 
 # ⚠ Dashboard 5: Safety Incident Dashboard
-Purpose
+## Purpose
 
 Monitors workplace and transportation safety performance to reduce operational risks and improve compliance.
 
-- Key Metrics
+## Key Metrics
 - Total Incidents
 - Incident Rate
 - Incidents by Severity Level
 - Incidents by Driver
 - Incidents by Route
 - Monthly Incident Trends
-# Insights Generated
+## Insights Generated
 - High-risk routes identification
 - Driver safety performance monitoring
 - Safety trend analysis
@@ -216,20 +277,31 @@ The insights generated support strategic decision-making, improve operational vi
 
 # 📷 Dashboard Previews
 
-Add screenshots of:
+## Executive Overview
+![executive dashboard](images/executive%20dashboard.png)
 
-Executive Overview Dashboard
-Operations Performance Dashboard
-Customer Analytics Dashboard
-Route Performance Dashboard
-Safety Incident Dashboard
+## Driver Performance
+![driver dashboard](images/driver%20dashboard.png)
+
+## Fleet Performance
+![fuel dashboard](images/fuel%20dashboard.png)
+
+## Transportation And Load Analytics
+![transportation dashboard](images/transportation%20dashboard.png)
+
+## Truck Maintenance Analytics
+![truck maintenance dashboard](images/truck%20maintenance%20dashboard.png)
+
+## Incidence Analytics
+![incidents dashboard](images/incidents%20dashboard.png)
+
 
 # 👤 Author
 
-# Omotayo Victory
-# Data Analyst | Power BI Developer | SQL Analyst
+## Omotayo Victory
+## Data Analyst | Power BI Developer | SQL Analyst
 
-# Skills Demonstrated
+## Skills Demonstrated
 - Data Cleaning
 - SQL Querying
 - Data Modeling
